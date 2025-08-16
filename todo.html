@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="todo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <h1 class="logo">todo</h1>
+    <ul>
+    <button id="back" onclick ="loadOriginalPage();"><li>Home</li></button>
+    <button id="notify-btn" onclick = "
+    document.getElementById('notify-btn').addEventListener('click', notifications1());
+    "
+    ><li>notifications </li></button>
+  </ul>
+  <div class = todo-main>
+  <button class="todo-btn" id="td-btn" onclick="
+   document.getElementById('td-btn').addEventListener('click', loadtodosPage());
+    ">todos</button>
+  <div class="todo-num" id="segs"></div>
+  </div>
+  </nav>
+<div class="main" id = 'baggage'>
+    <div class="main-container">
+          <p class="Get-text">Get your day started</p>
+          <div class="task-details">
+          <input id="text-input" type="text" placeholder="input task">
+          <input id="which-day" type="date">
+          <input id="todo-time" type="time">
+      </div>
+      <button onclick="
+       todoList = todoList + 1;
+      document.getElementById('segs').innerHTML = todoList;
+      addNotice();
+      addtodo();
+      " class="add-btn">add</button>
+  </div>
+</div>
+ <script src="todo.js"> </script>
+
+</body>
+</html>
